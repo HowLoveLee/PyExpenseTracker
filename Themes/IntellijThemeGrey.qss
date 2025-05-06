@@ -1,32 +1,24 @@
-/* styles.qss */
-
-/* General Application Style:*/
 QWidget {
-    background-color: #181818; /* Dark grey background */
-    color: #c0c0c0; /* Light grey font color */
-    font-family: "Segoe UI"; /* Example font; adjust as needed */
+    background-color: #181818;
+    color: #c0c0c0;
+    font-family: "Segoe UI";
     font-size: 14px;
-
 }
 
-/*Buttons*/
 QPushButton {
-    background-color: #155180;  /* New background color */
-    border: 1px solid #005bb5;  /* Slightly darker border for contrast */
-    color: white;  /* Text color set to white for visibility */
+    background-color: #155180;
+    border: 1px solid #005bb5;
+    color: white;
 }
 
 QPushButton:hover {
-    background-color: #103e61;  /* Darker shade when hovered */
+    background-color: #103e61;
 }
 
 QPushButton:pressed {
-    background-color: rgb(5, 58, 112);  /* Even darker shade when pressed */
+    background-color: rgb(5, 58, 112);
 }
 
-/*Tables and Lists:
-
-*/
 QTableWidget, QListWidget {
     alternate-background-color: #313335;
     border: 1px solid #43484a;
@@ -36,9 +28,6 @@ QTableWidget, QListWidget {
 QTableWidget::item, QListWidget::item {
 }
 
-/* Menus and Menu Items:
-
-*/
 QMenu {
     background-color: #181818;
     border: 1px solid #43484a;
@@ -51,58 +40,51 @@ QMenu::item:selected {
     background-color: #3c3f41;
 }
 
-/* Text Edits:
-
-*/
 QTextEdit {
     background-color: #2c2f31;
     border: 1px solid #43484a;
     color: #a9b7c6;
 }
 
-/* Dialogs and Windows:
-
-*/
 QDialog, QMainWindow {
     background-color: #181818;
     border: 1px solid #43484a;
 }
 
-/* Table Header:
-*/
 QHeaderView::section {
-    background-color: #181818; /* Match the general background color */
-    color: white; /* Set text color to white */
+    background-color: #181818;
+    color: white;
     border: 1px solid #43484a;
 }
 
-/* Cell Highlighting:
-
-*/
 QTableWidget::item:selected, QListWidget::item:selected {
-    background-color: #3c3f41; /* Dark grey for selected items */
+    background-color: #3c3f41;
     color: white;
 }
 
 QDateEdit, QDateEdit::drop-down, QLineEdit {
-    selection-background-color: #3c3f41;  /* Dark grey for selected text */
+    selection-background-color: #3c3f41;
     selection-color: white;
 }
 
 QDateEdit QAbstractItemView {
-    selection-background-color: #3c3f41;  /* Dark grey for selected date in the dropdown */
+    selection-background-color: #3c3f41;
     selection-color: white;
 }
+
 QTableWidget QDateEdit QAbstractItemView::item:selected {
-    background-color: #3c3f41;  /* Dark grey for selected date */
+    background-color: #3c3f41;
     color: white;
 }
+
 QTableWidget::item {
-    background-color: #181818;  /* Set to the dark grey theme */
+    background-color: #181818;
 }
+
 QMenu::item:disabled {
-    color: #555555;  /* Dim grey for disabled menu items */
+    color: #555555;
 }
+
 QScrollBar:vertical {
     border: 1px solid #43484a;
     background: #181818;
@@ -117,33 +99,41 @@ QScrollBar::handle:vertical {
 QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
     height: 0;
 }
+
 QTableWidget QTableCornerButton::section {
-    background-color: #181818;  /* Match the general background color */
+    background-color: #181818;
     border: none;
 }
+
 QComboBox QAbstractItemView::item:selected {
-    background-color: #3c3f41;  /* Dark grey for selected item */
-    color: white;  /* Text color for contrast */
+    background-color: #3c3f41;
+    color: white;
 }
+
 QComboBox:focus {
-    border: 1px solid #3c3f41;  /* Dark grey border */
-    background-color: #2b2b2b;  /* Match the general background color */
+    border: 1px solid #3c3f41;
+    background-color: #2b2b2b;
 }
+
 QDateEdit:focus {
-    border: 1px solid #3c3f41;  /* Dark grey border */
-    background-color: #2b2b2b;  /* Match the general background color */
+    border: 1px solid #3c3f41;
+    background-color: #2b2b2b;
 }
+
 QTableWidget::item:selected {
-    background-color: #3c3f41; /* Dark grey for selected items */
+    background-color: #3c3f41;
 }
+
 QTableWidget::item:selected QDateEdit {
-    background-color: #3c3f41; /* Dark grey to match the cell selection */
+    background-color: #3c3f41;
 }
+
 QMenu::item:hover {
-    background-color: #00008B;  /* Dark blue for hovered menu items */
-    color: white;  /* Set the text color to white for contrast */
+    background-color: #00008B;
+    color: white;
 }
-QMenuBar:item:hover{
-    background-color: #00008B;  /* Dark blue for hovered menu items */
-    color: white;  /* Set the text color to white for contrast */
+
+QMenuBar:item:hover {
+    background-color: #00008B;
+    color: white;
 }

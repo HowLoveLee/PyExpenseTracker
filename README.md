@@ -1,32 +1,34 @@
-# 🐒 MonkeyTracker: Budget & Expense Tracker
+# 🐒Expense Tracker🐒
+**Feel free to contribute!**
 
-Hello this is my first python project hope you enjoy. if you try it out and have any ideas i could or feature implementation just shoot me a message and I will see about it. Yes I am new the code is not the cleanest. Since its my first project in this language i wrote everything on 2 files which is not clean but for not it will do. As I add more features then I will work on breaking down the files.
+My first python project back in 2022. I rediscovered it today.
+Codebase isn't the cleanest or very readable
+(not even god remembers what I wrote 3 years ago).
 
-MonkeyTracker is a tool designed to help keep you keep a track in your expenses and how much money is coming in.
-![MonkeyTracker Logo](C:\Dev\PythonProjects\TheMonkeyTracker\images\icons8-monkey-96.png)  <!-- replace with actual logo URL -->
-Monkey a lil ugly i know bare with me. Baby steps lads.
-## 🌟 Features (Work in progress)
-Chef give me a few days don't fire me yet
-## Libraries used:
-- PYQT6
-- PLOTLY
-- PANDAS
-- DASH
+MonkeyTracker is a tool designed to help keep you keep a 
+track of your expenses and how much money is coming in.
+Program a lil ugly i know bare with me. **Baby steps lads**.
+## Plan (may or may not be in order):
+- Full codebase restructure
+- Naming conventions change
+- Excel copycat shortcuts
+- Dark, Light, Acrylic QSS themes.
+- CSV & Excel imports
+- Integration with **Plaid API**
+- JSON GUI category editors
+- **BUDGETING** (this is its own beast, more on it later)
 
-## 📅 Future Plans
+---
 
-- **File Operations:** 
-  - OPERATIONS: 
-    - New Sheet
-    - Open Sheet
-    - Save Sheet
-    - Save As
-    - export to PDF 
-    - Export to Excel as well as importation.
-- **Customizable UI:** 
-  - Adjust the size(For my blind fellas)
-  - Personalize color for categories, enhancing the overall experience.
+## 🌟 Features (WIP)
+Chef, give me a few more days, don’t fire me yet.
+Once I update codebase I'll put what's already made 
+and what needs to be added.
 
-- **Expense Management:** Add expenses, assign them to categories, set due and audit dates, and even attach receipts.
-
-- **Interactive Pie Charts:** Analyze your expenses with an interactive pie chart, and get a detailed breakdown with just a click.
+## Tech Stack
+- Swap PYQT6 for PySide6
+- pandas 
+- plotly 
+- matplotlib 
+- seaborn(Will remove)
+- 

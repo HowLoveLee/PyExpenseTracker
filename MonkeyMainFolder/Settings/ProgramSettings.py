@@ -1,6 +1,8 @@
 from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QSplitter,
                              QLineEdit, QLabel, QStackedWidget, QPushButton,
                              QTreeWidget, QTreeWidgetItem, QFrame)
+from Settings.CustomPanels.CustomBlockEditor import CustomBlockEditor
+
 
 
 class ProgramSettings(QWidget):
@@ -44,6 +46,9 @@ class ProgramSettings(QWidget):
         # Add the splitter to the main layout
         layout.addWidget(self.splitter)
 
+        self.expensesEditor = CustomBlockEditor(filepath="JSONS/expensesEditor.json")  # or your desired path
+        self.settingsDetails.addWidget(self.expensesEditor)
+
         # Ok and Cancel buttons at the bottom
         btnLayout = QHBoxLayout()
         saveButton = QPushButton("Save", self)
@@ -80,6 +85,10 @@ class ProgramSettings(QWidget):
 
         # Tables
         tablesItem = QTreeWidgetItem(["Tables"])
+
+
+
+
         tablesItem.addChild(QTreeWidgetItem(["Expenses"]))
         tablesItem.addChild(QTreeWidgetItem(["Income"]))
 
@@ -106,10 +115,17 @@ class ProgramSettings(QWidget):
         self.settingsTree.addTopLevelItem(integrationsItem)
 
     def changeSettingsPage(self, current, previous):
-        # Update the label on the right side to reflect the selected tree item
-        label = QLabel(current.text(0), self)
-        idx = self.settingsDetails.addWidget(label)
-        self.settingsDetails.setCurrentIndex(idx)
+        if not current:
+            return
+
+        text = current.text(0)
+
+        if text == "Expenses":
+            self.settingsDetails.setCurrentWidget(self.expensesEditor)
+        else:
+            label = QLabel(text, self)
+            idx = self.settingsDetails.addWidget(label)
+            self.settingsDetails.setCurrentIndex(idx)
 
     def acceptSettings(self):
         # Apply the settings changes if needed

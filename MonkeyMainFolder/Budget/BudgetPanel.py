@@ -30,10 +30,8 @@ class BudgetPanel(QtWidgets.QWidget):
 
         super().__init__()
 
-        # Placeholder widget for the Net Worth chart
         netWorthChart = QtWidgets.QWidget()
-        netWorthChart.setStyleSheet("background-color: red;")  # Temp color to visualize space
-
+        netWorthChart.setStyleSheet("background-color: red;")
         # Expense data
         data = {
             'Date': [
@@ -63,7 +61,6 @@ class BudgetPanel(QtWidgets.QWidget):
             ]
         }
 
-        # Randomly shuffle the 'Amount' values between the defined range
         df = pd.DataFrame(data)
         df['Date'] = pd.to_datetime(df['Date'])
         df = df.sort_values(by='Date')
@@ -79,15 +76,12 @@ class BudgetPanel(QtWidgets.QWidget):
         sc.axes.xaxis.set_major_formatter(customDateFormat)
         sc.figure.autofmt_xdate()
 
-        # Navigation toolbar
         toolbar = NavigationToolbar(sc, self)
 
-        # Organize chart layouts with equal stretch factors
         chartLayout = QtWidgets.QHBoxLayout()
-        chartLayout.addWidget(netWorthChart, 1)  # 50% width
+        chartLayout.addWidget(sc, 1)  # 50% width
         chartLayout.addWidget(sc, 1)  # 50% width
 
-        # Ensure charts and buttons each take up half the height of the panel
         chartLayout.setContentsMargins(0, 0, 0, 0)
         chartLayout.setSpacing(0)
 

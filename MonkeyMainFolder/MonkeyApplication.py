@@ -130,12 +130,11 @@ class MyWindow(QMainWindow):
         palette.setBrush(QPalette.ColorRole.Window, brush)
         splitter.setPalette(palette)
 
-        # Add the splitter as the first tab
         tabWidget.addTab(splitter, "Expenses & Income")
 
         self.budget = BudgetPanel()
         self.Conditional = ConditionalStatements()
-        # Add the budget placeholder as the second tab
+        tabWidget.addTab(self.Conditional, "Conditional")
         tabWidget.addTab(self.budget, "Budget")
 
         # Set the QTabWidget as the central widget of the main window
