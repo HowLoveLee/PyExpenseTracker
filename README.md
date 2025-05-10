@@ -1,13 +1,11 @@
-# 🐒Expense Tracker🐒
+# 🐒PyQT6: Transactions Manger🐒
 **Feel free to contribute!**
 
-My first python project back in 2022. I rediscovered it today.
-Codebase isn't the cleanest or very readable
-(not even god remembers what I wrote 3 years ago).
+Old 2022 Project back from the grave codebase isn't the cleanest or very readable
+(not even god remembers what I wrote 3 years ago). I changed the structure and file
+naming conventions this is a re-upload repo made public, any changes you wish to contribute go head!
 
-MonkeyTracker is a tool designed to help keep you keep a 
-track of your expenses and how much money is coming in.
-Program a lil ugly i know bare with me. **Baby steps lads**.
+![Base Application](assets/images/example1.png)
 ## Plan (may or may not be in order):
 - Full codebase restructure
 - Naming conventions change
@@ -21,14 +19,7 @@ Program a lil ugly i know bare with me. **Baby steps lads**.
 ---
 
 ## 🌟 Features (WIP)
-Chef, give me a few more days, don’t fire me yet.
-Once I update codebase I'll put what's already made 
-and what needs to be added.
+Chef, give me a few more days, don’t fire me yet. using PyQT6, Pandas, and I have yet to decide which package I'll use
+for graph displays.
 
-## Tech Stack
-- Swap PYQT6 for PySide6
-- pandas 
-- plotly 
-- matplotlib 
-- seaborn(Will remove)
-- 
+![Base Settings JSON editor](assets/images/example2.png)

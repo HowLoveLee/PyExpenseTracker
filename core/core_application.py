@@ -127,7 +127,7 @@ class MyWindow(QMainWindow):
         # Use the scaled pixmap for the brush
         brush = QBrush(scaled_pixmap)
         palette = QPalette()
-        palette.setBrush(QPalette.ColorRole.Window, brush)
+       # palette.setBrush(QPalette.ColorRole.Window, brush)
         splitter.setPalette(palette)
 
         tabWidget.addTab(splitter, "Expenses & Income")
