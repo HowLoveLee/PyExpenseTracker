@@ -5,7 +5,6 @@ from PyQt6.QtGui import QIcon, QPixmap
 from PyQt6.QtWidgets import QApplication, QMenuBar, QMenu, QLabel
 from qframelesswindow import FramelessWindow, StandardTitleBar
 
-
 class CustomTitleBar(StandardTitleBar):
 
     def __init__(self, parent=None):
@@ -44,7 +43,7 @@ class CustomTitleBar(StandardTitleBar):
             }
         """)
         icon_label = QLabel(self)
-        icon_pixmap = QPixmap("images/moke.png")
+        icon_pixmap = QPixmap("assets/images/moke.png")
         scaled_pixmap = icon_pixmap.scaled(20, 20,
                                            Qt.AspectRatioMode.KeepAspectRatio)
 
@@ -76,7 +75,7 @@ class CustomTitleBar(StandardTitleBar):
         self.layout().insertWidget(2, self.menu_bar)
 
         # Optionally set an icon and title
-        self.setWindowIcon(QIcon("images/moke.png"))
+        self.setWindowIcon(QIcon("assets/images/moke.png"))
         self.setWindowTitle("TheMonkeyTracker")
 
     def resizeEvent(self, event):
