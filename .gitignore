@@ -1,1 +1,6 @@
-.venv2
+.venv
+Window.py
+Core/__pycache__/
+Core/config/__pycache__/
+Core/ui/__pycache__/
+Core/widgets/__pycache__/
